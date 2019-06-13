@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		A93B24D822B0D478009BBC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B24D722B0D478009BBC47 /* AppDelegate.swift */; };
-		A93B24DA22B0D478009BBC47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B24D922B0D478009BBC47 /* ViewController.swift */; };
+		A93B24DA22B0D478009BBC47 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93B24D922B0D478009BBC47 /* GameViewController.swift */; };
 		A93B24DD22B0D478009BBC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93B24DB22B0D478009BBC47 /* Main.storyboard */; };
 		A93B24DF22B0D47A009BBC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93B24DE22B0D47A009BBC47 /* Assets.xcassets */; };
 		A93B24E222B0D47A009BBC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93B24E022B0D47A009BBC47 /* LaunchScreen.storyboard */; };
+		A9877E8B22B1DE7100AF79B2 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9877E8A22B1DE7100AF79B2 /* words.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A93B24D422B0D478009BBC47 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93B24D722B0D478009BBC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A93B24D922B0D478009BBC47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A93B24D922B0D478009BBC47 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A93B24DC22B0D478009BBC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A93B24DE22B0D47A009BBC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A93B24E122B0D47A009BBC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A93B24E322B0D47A009BBC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9877E8A22B1DE7100AF79B2 /* words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		A93B24D622B0D478009BBC47 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				A9877E8922B1DE5500AF79B2 /* Resources */,
 				A93B24D722B0D478009BBC47 /* AppDelegate.swift */,
-				A93B24D922B0D478009BBC47 /* ViewController.swift */,
+				A93B24D922B0D478009BBC47 /* GameViewController.swift */,
 				A93B24DB22B0D478009BBC47 /* Main.storyboard */,
 				A93B24DE22B0D47A009BBC47 /* Assets.xcassets */,
 				A93B24E022B0D47A009BBC47 /* LaunchScreen.storyboard */,
 				A93B24E322B0D47A009BBC47 /* Info.plist */,
 			);
 			path = Hangman;
+			sourceTree = "<group>";
+		};
+		A9877E8922B1DE5500AF79B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9877E8A22B1DE7100AF79B2 /* words.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +135,7 @@
 			files = (
 				A93B24E222B0D47A009BBC47 /* LaunchScreen.storyboard in Resources */,
 				A93B24DF22B0D47A009BBC47 /* Assets.xcassets in Resources */,
+				A9877E8B22B1DE7100AF79B2 /* words.txt in Resources */,
 				A93B24DD22B0D478009BBC47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A93B24DA22B0D478009BBC47 /* ViewController.swift in Sources */,
+				A93B24DA22B0D478009BBC47 /* GameViewController.swift in Sources */,
 				A93B24D822B0D478009BBC47 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
