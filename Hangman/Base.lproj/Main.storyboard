@@ -247,6 +247,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="2eJ-3S-iBT" id="TUO-Ps-NRk"/>
+                        <outlet property="wordLabel" destination="e8u-RG-xQG" id="uW7-h7-DKh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
