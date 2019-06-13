@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
 
   @IBOutlet var scoreLabel: UILabel!
   @IBOutlet var wordLabel: UILabel!
+  @IBOutlet var letterButtons: [UIButton]!
 
   // MARK: - Properties
 
@@ -30,12 +31,21 @@ class GameViewController: UIViewController {
     startGame()
   }
 
+  // MARK: - Actions
+
+  @IBAction private func letterButtonTapped(_ sender: UIButton) {
+    if let letterToSearch = sender.titleLabel?.text?.uppercased() {
+      sender.isHidden = true
+      search(letterToSearch)
+    }
+  }
+
   // MARK: - Methods
 
   private func getWords() {
     if let filePath = Bundle.main.url(forResource: "words", withExtension: "txt"),
       let wordsOfPath = try? String(contentsOf: filePath).trimmingCharacters(in: .whitespacesAndNewlines) {
-      words = wordsOfPath.components(separatedBy: "\n")
+      words = wordsOfPath.components(separatedBy: "\n").map { $0.uppercased() }
       print(words)
     } else {
       words.append("Apple")
@@ -44,14 +54,28 @@ class GameViewController: UIViewController {
 
   private func startGame() {
     getWords()
+    restartButtonsState()
+
     scoreLabel.text = String(score)
     words.shuffle()
     wordToGuess = words[wordIndex]
+    print(wordToGuess)
     for _ in wordToGuess {
       maskedWord.append(Character("?"))
     }
 
     wordLabel.text = maskedWord
+  }
+
+  private func restartButtonsState() {
+    for button in letterButtons {
+      button.isHidden = false
+    }
+  }
+
+  private func search(_ letter: String) {
+    let indexes = wordToGuess.enumerated().map { String($1) == letter ? $0 : nil }.compactMap { $0 }
+    print(indexes)
   }
 }
 

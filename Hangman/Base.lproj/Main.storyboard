@@ -56,36 +56,57 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="A"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHW-A9-wbp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNG-yJ-J94">
                                                         <rect key="frame" x="43" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="B"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSE-mz-S8y"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmp-sr-ErI">
                                                         <rect key="frame" x="86" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="C"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dS7-oX-0jm"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqK-UM-4iS">
                                                         <rect key="frame" x="129" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="D"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWY-p2-9Nx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwt-TW-IEK">
                                                         <rect key="frame" x="172" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="E"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TlV-j8-mvN"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="de2-rg-ngS">
                                                         <rect key="frame" x="215" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="F"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhT-oO-gSA"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sK8-MI-SIZ">
                                                         <rect key="frame" x="258" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="G"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrS-sb-RC7"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -96,36 +117,57 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="H"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Mq-H2-50L"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ze3-lM-x08">
                                                         <rect key="frame" x="43" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="I"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ure-YE-7uI"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh8-Rk-cIq">
                                                         <rect key="frame" x="86" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="J"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CCj-96-Naz"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AB-yK-EDd">
                                                         <rect key="frame" x="129" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="K"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxb-nG-cOi"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RL1-jb-l9e">
                                                         <rect key="frame" x="172" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="L"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIg-sn-kiK"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egy-T2-r0e">
                                                         <rect key="frame" x="215" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="M"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dz8-DS-udh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-sc-Yq8">
                                                         <rect key="frame" x="258" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="N"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Amz-YT-SFn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -136,36 +178,57 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="O"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jMc-Ky-arK"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvv-Z4-kvB">
                                                         <rect key="frame" x="43" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="P"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCy-3U-LdQ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4O-2b-2AY">
                                                         <rect key="frame" x="86" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="Q"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDL-Of-y7p"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJa-t7-V6e">
                                                         <rect key="frame" x="129" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="R"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BmJ-cl-uEG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xw-bf-UwQ">
                                                         <rect key="frame" x="172" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="S"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zmW-w8-jZw"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snv-bX-i3g">
                                                         <rect key="frame" x="215" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="T"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i21-jW-goW"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wo-Y3-WFD">
                                                         <rect key="frame" x="258" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="U"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ssD-1y-3yt"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -176,26 +239,41 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="V"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rk-6E-jj6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZJ-Ce-XyT">
                                                         <rect key="frame" x="64.5" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="W"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMd-0t-ltm"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwc-ri-Ncn">
                                                         <rect key="frame" x="129" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="X"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiT-2q-y1h"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTT-aP-hfk">
                                                         <rect key="frame" x="193.5" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="Y"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Grb-Lp-5mP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEG-gc-tnC">
                                                         <rect key="frame" x="258" y="0.0" width="30" height="40"/>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                                         <state key="normal" title="Z"/>
+                                                        <connections>
+                                                            <action selector="letterButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kTS-59-mIa"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -250,6 +328,32 @@
                     <connections>
                         <outlet property="scoreLabel" destination="2eJ-3S-iBT" id="TUO-Ps-NRk"/>
                         <outlet property="wordLabel" destination="e8u-RG-xQG" id="uW7-h7-DKh"/>
+                        <outletCollection property="letterButtons" destination="gTt-mT-cDX" collectionClass="NSMutableArray" id="Os1-sR-IAe"/>
+                        <outletCollection property="letterButtons" destination="zNG-yJ-J94" collectionClass="NSMutableArray" id="yqD-ot-m2O"/>
+                        <outletCollection property="letterButtons" destination="Wmp-sr-ErI" collectionClass="NSMutableArray" id="dPS-1R-9fZ"/>
+                        <outletCollection property="letterButtons" destination="zqK-UM-4iS" collectionClass="NSMutableArray" id="laj-vV-mlb"/>
+                        <outletCollection property="letterButtons" destination="Xwt-TW-IEK" collectionClass="NSMutableArray" id="PuQ-0M-ivm"/>
+                        <outletCollection property="letterButtons" destination="de2-rg-ngS" collectionClass="NSMutableArray" id="Y0g-2d-I7j"/>
+                        <outletCollection property="letterButtons" destination="sK8-MI-SIZ" collectionClass="NSMutableArray" id="yCM-wk-7yS"/>
+                        <outletCollection property="letterButtons" destination="c08-5o-8js" collectionClass="NSMutableArray" id="00l-Tg-Ziw"/>
+                        <outletCollection property="letterButtons" destination="ze3-lM-x08" collectionClass="NSMutableArray" id="HpJ-45-C0Q"/>
+                        <outletCollection property="letterButtons" destination="Qh8-Rk-cIq" collectionClass="NSMutableArray" id="buY-8R-Lwg"/>
+                        <outletCollection property="letterButtons" destination="8AB-yK-EDd" collectionClass="NSMutableArray" id="N0e-Yu-fO2"/>
+                        <outletCollection property="letterButtons" destination="RL1-jb-l9e" collectionClass="NSMutableArray" id="ehA-va-wXw"/>
+                        <outletCollection property="letterButtons" destination="egy-T2-r0e" collectionClass="NSMutableArray" id="Tij-uU-rqT"/>
+                        <outletCollection property="letterButtons" destination="9eP-sc-Yq8" collectionClass="NSMutableArray" id="Lvl-bv-W3a"/>
+                        <outletCollection property="letterButtons" destination="GuO-mR-lK8" collectionClass="NSMutableArray" id="Fcc-Ps-Nr7"/>
+                        <outletCollection property="letterButtons" destination="Xvv-Z4-kvB" collectionClass="NSMutableArray" id="5cZ-Dt-r45"/>
+                        <outletCollection property="letterButtons" destination="N4O-2b-2AY" collectionClass="NSMutableArray" id="xJF-go-wkO"/>
+                        <outletCollection property="letterButtons" destination="YJa-t7-V6e" collectionClass="NSMutableArray" id="Vg9-N7-kdY"/>
+                        <outletCollection property="letterButtons" destination="6Xw-bf-UwQ" collectionClass="NSMutableArray" id="aZ0-VZ-kS3"/>
+                        <outletCollection property="letterButtons" destination="snv-bX-i3g" collectionClass="NSMutableArray" id="61T-si-BiE"/>
+                        <outletCollection property="letterButtons" destination="1wo-Y3-WFD" collectionClass="NSMutableArray" id="A5j-E4-bh1"/>
+                        <outletCollection property="letterButtons" destination="O6L-BP-EBT" collectionClass="NSMutableArray" id="VER-tY-aUx"/>
+                        <outletCollection property="letterButtons" destination="XZJ-Ce-XyT" collectionClass="NSMutableArray" id="Zsl-J6-jHe"/>
+                        <outletCollection property="letterButtons" destination="Gwc-ri-Ncn" collectionClass="NSMutableArray" id="flV-gH-fwZ"/>
+                        <outletCollection property="letterButtons" destination="aTT-aP-hfk" collectionClass="NSMutableArray" id="5sb-2D-Dnj"/>
+                        <outletCollection property="letterButtons" destination="PEG-gc-tnC" collectionClass="NSMutableArray" id="oIO-ci-AUv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
