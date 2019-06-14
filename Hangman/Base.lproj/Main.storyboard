@@ -326,6 +326,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hangmanImageView" destination="ycI-vT-O7I" id="fFG-go-9fS"/>
                         <outlet property="scoreLabel" destination="2eJ-3S-iBT" id="TUO-Ps-NRk"/>
                         <outlet property="wordLabel" destination="e8u-RG-xQG" id="uW7-h7-DKh"/>
                         <outletCollection property="letterButtons" destination="gTt-mT-cDX" collectionClass="NSMutableArray" id="Os1-sR-IAe"/>

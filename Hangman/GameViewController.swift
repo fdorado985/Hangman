@@ -15,14 +15,29 @@ class GameViewController: UIViewController {
   @IBOutlet var scoreLabel: UILabel!
   @IBOutlet var wordLabel: UILabel!
   @IBOutlet var letterButtons: [UIButton]!
-
+  @IBOutlet var hangmanImageView: UIImageView!
+  
   // MARK: - Properties
 
   private var words = [String]()
   private var wordToGuess = ""
-  private var maskedWord = ""
-  private var wordIndex = 0
+  private var wordIndex = -1
   private var score = 0
+  private var attempt = 0 {
+    didSet {
+      hangmanImageView.image = attempt == 0 ? UIImage(named: "base") : UIImage(named: "attempt\(attempt)")
+    }
+  }
+
+  // MARK: - Computed Properties
+
+  private var completed: Bool {
+    return !maskedWord.contains("?")
+  }
+
+  private var maskedWord = "" {
+    didSet { wordLabel.text = maskedWord }
+  }
 
   // MARK: - View cycle
 
@@ -52,30 +67,56 @@ class GameViewController: UIViewController {
     }
   }
 
-  private func startGame() {
+  private func startGame(action: UIAlertAction? = nil) {
     getWords()
-    restartButtonsState()
+    restartButtonsStates()
 
     scoreLabel.text = String(score)
+    attempt = 0
     words.shuffle()
+
+    nextWord()
+
+  }
+
+  private func nextWord(action: UIAlertAction? = nil) {
+    restartButtonsStates()
+    wordIndex = (wordIndex < 0 || wordIndex + 1 == words.count) ? 0 : wordIndex + 1
+    maskedWord = ""
     wordToGuess = words[wordIndex]
     print(wordToGuess)
-    for _ in wordToGuess {
-      maskedWord.append(Character("?"))
-    }
-
+    wordToGuess.forEach { _ in maskedWord.append(Character("?")) }
     wordLabel.text = maskedWord
   }
 
-  private func restartButtonsState() {
+  private func restartButtonsStates() {
     for button in letterButtons {
       button.isHidden = false
     }
   }
 
   private func search(_ letter: String) {
-    let indexes = wordToGuess.enumerated().map { String($1) == letter ? $0 : nil }.compactMap { $0 }
-    print(indexes)
+    let positions = wordToGuess.enumerated().compactMap { String($1) == letter ? $0 : nil }
+    if !maskedWord.replaceString(at: positions, with: Character(letter)) {
+      attempt += 1
+      if attempt == 6 {
+        let ac = UIAlertController(title: "Bad news", message: "You have lost the word 😞", preferredStyle: .alert)
+        let restartAction = UIAlertAction(title: "Restart", style: .default, handler: startGame)
+        ac.addAction(restartAction)
+        present(ac, animated: true)
+      }
+    }
+
+    if completed {
+      gameCompleted()
+    }
+  }
+
+  private func gameCompleted() {
+    let ac = UIAlertController(title: "Excellent", message: "You have found the word", preferredStyle: .alert)
+    let nextAction = UIAlertAction(title: "Next", style: .default, handler: nextWord)
+    ac.addAction(nextAction)
+    present(ac, animated: true)
   }
 }
 
