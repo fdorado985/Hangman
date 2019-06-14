@@ -5,3 +5,6 @@
 
 ## Description
 This is the simple classic game of Hangman, you will guess a word with the given letters on the alphabet.
+
+## Demo
+![demo1](.screenshots/demo1.gif)
