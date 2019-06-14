@@ -58,10 +58,10 @@
 		A93B24D622B0D478009BBC47 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				A9CBAC8522B335A4004B950C /* Controllers */,
 				A9CBAC8422B32213004B950C /* Extensions */,
 				A9877E8922B1DE5500AF79B2 /* Resources */,
 				A93B24D722B0D478009BBC47 /* AppDelegate.swift */,
-				A93B24D922B0D478009BBC47 /* GameViewController.swift */,
 				A93B24DB22B0D478009BBC47 /* Main.storyboard */,
 				A93B24DE22B0D47A009BBC47 /* Assets.xcassets */,
 				A93B24E022B0D47A009BBC47 /* LaunchScreen.storyboard */,
@@ -84,6 +84,14 @@
 				A9CBAC8222B3220D004B950C /* String+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9CBAC8522B335A4004B950C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A93B24D922B0D478009BBC47 /* GameViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
