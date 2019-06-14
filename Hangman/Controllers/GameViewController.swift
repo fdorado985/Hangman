@@ -22,14 +22,12 @@ class GameViewController: UIViewController {
   private var words = [String]()
   private var wordToGuess = ""
   private var wordIndex = -1
-  private var score = 0
-  private var attempt = 0 {
-    didSet {
-      hangmanImageView.image = attempt == 0 ? UIImage(named: "base") : UIImage(named: "attempt\(attempt)")
-    }
-  }
 
   // MARK: - Computed Properties
+
+  private var score = 0 {
+    didSet { scoreLabel.text = "\(score)" }
+  }
 
   private var completed: Bool {
     return !maskedWord.contains("?")
@@ -37,6 +35,19 @@ class GameViewController: UIViewController {
 
   private var maskedWord = "" {
     didSet { wordLabel.text = maskedWord }
+  }
+
+  private var attempt = 0 {
+    didSet {
+      UIView.animate(withDuration: 0.2, animations: {
+        self.hangmanImageView.alpha = 0.0
+      }) { (finished) in
+        UIView.animate(withDuration: 0.2, animations: {
+          self.hangmanImageView.alpha = 1.0
+          self.hangmanImageView.image = self.attempt == 0 ? UIImage(named: "base") : UIImage(named: "attempt\(self.attempt)")
+        })
+      }
+    }
   }
 
   // MARK: - View cycle
@@ -98,6 +109,7 @@ class GameViewController: UIViewController {
   private func search(_ letter: String) {
     let positions = wordToGuess.enumerated().compactMap { String($1) == letter ? $0 : nil }
     if !maskedWord.replaceString(at: positions, with: Character(letter)) {
+      score = score - 50 < 0 ? 0 : score - 50
       attempt += 1
       if attempt == 6 {
         let ac = UIAlertController(title: "Bad news", message: "You have lost the word 😞", preferredStyle: .alert)
@@ -105,9 +117,12 @@ class GameViewController: UIViewController {
         ac.addAction(restartAction)
         present(ac, animated: true)
       }
+    } else {
+      score += 100
     }
 
     if completed {
+      score += 200
       gameCompleted()
     }
   }
